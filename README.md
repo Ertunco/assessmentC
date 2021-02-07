@@ -16,7 +16,7 @@ Build a command line interface or simple flask front-end site that support follo
         - symbol, name, type, region, marketOpen, marketClose, timezone, currency, matchScore
     - display historical prices on specific timeframes:
         - intraday as 5m, 15m,.., daily or weekly or monthly (select two)
-            - [intraday] (https://www.alphavantage.co/documentation/#intraday)
+            - [intraday](https://www.alphavantage.co/documentation/#intraday)
             - [daily](https://www.alphavantage.co/documentation/#daily)
             - [weekly](https://www.alphavantage.co/documentation/#weekly)
             - [monthly](https://www.alphavantage.co/documentation/#monthly)
