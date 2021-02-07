@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %}
+{% block content%}
+<form method="POST">
+    <h3 align="center">Display Options</h3>
+    <div align="center" class="display-options">
+    <button type="submit" name="submit_button" value="Additional Details" class="btn btn-primary">Additional Details</button>
+    <button type="submit" name="submit_button" value="Historical Prices Daily" class="btn btn-primary">Historical Prices Daily</button>
+    <button type="submit" name="submit_button" value="Historical Prices Weekly" class="btn btn-primary">Historical Prices Weekly</button>
+    <button type="submit" name="submit_button" value="Current Quote" class="btn btn-primary">Current Quote</button>
+    <button type="submit" name="submit_button" value="Indicator" class="btn btn-primary">Indicator</button>
+    </div>
+</form>
+{% endblock %}

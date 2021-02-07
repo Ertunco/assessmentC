@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}Timeframe{% endblock %} 
+{% block content%}
+<table id="data-table" class="display">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for key, value in data.items() %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>{{ value["1. open"] }}</td>
+                <td>{{ value["2. high"] }}</td>
+                <td>{{ value["3. low"] }}</td>
+                <td>{{ value["4. close"] }}</td>
+                <td>{{ value["5. volume"] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %} 

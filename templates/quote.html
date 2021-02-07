@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Quote{% endblock %} 
+{% block content%}
+<table id="data-table" class="display">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Price</th>
+            <th>Volume</th>
+            <th>Latest Trading Day</th>
+            <th>Previous Close</th>
+            <th>Change</th>
+            <th>Change Percent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ data["01. symbol"] }}</td>
+            <td>{{ data["02. open"] }}</td>
+            <td>{{ data["03. high"] }}</td>
+            <td>{{ data["04. low"] }}</td>
+            <td>{{ data["05. price"] }}</td>
+            <td>{{ data["06. volume"] }}</td>
+            <td>{{ data["07. latest trading day"] }}</td>
+            <td>{{ data["08. previous close"] }}</td>
+            <td>{{ data["09. change"] }}</td>
+            <td>{{ data["10. change percent"] }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %} 

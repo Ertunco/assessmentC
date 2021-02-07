@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block title %}Indicator{% endblock %}
+{% block content%}
+<form method="POST">
+    <h3 align="center">Indicators</h3>
+    <div align="center" class="display-options">
+    <button type="submit" name="submit_button" value="SMA" class="btn btn-primary">SMA</button>
+    <button type="submit" name="submit_button" value="EMA" class="btn btn-primary">EMA</button>
+    <button type="submit" name="submit_button" value="WMA" class="btn btn-primary">WMA</button>
+    <button type="submit" name="submit_button" value="TRIMA" class="btn btn-primary">TRIMA</button>
+    </div>
+</form>
+{% endblock %}

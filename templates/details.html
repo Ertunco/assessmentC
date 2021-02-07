@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block title %}Details{% endblock %} 
+{% block content%}
+<table id="data-table" class="display">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Region</th>
+            <th>marketOpen</th>
+            <th>marketClose</th>
+            <th>timezone</th>
+            <th>currency</th>
+            <th>matchScore</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ data["1. symbol"] }}</td>
+            <td>{{ data["2. name"] }}</td>
+            <td>{{ data["3. type"] }}</td>
+            <td>{{ data["4. region"] }}</td>
+            <td>{{ data["5. marketOpen"] }}</td>
+            <td>{{ data["6. marketClose"] }}</td>
+            <td>{{ data["7. timezone"] }}</td>
+            <td>{{ data["8. currency"] }}</td>
+            <td>{{ data["9. matchScore"] }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %} 

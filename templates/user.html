@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}User{% endblock %} 
+
+{% block content%}
+<form action="#" method="post">
+    <label for="browser">Company: </label>
+    <input list="companies" name="company" id="company">
+    <datalist id="companies">
+      {% for dict_symbol_name in list_symbol_name%}
+          <option value="{{ dict_symbol_name['Symbol'] }}          {{ dict_symbol_name['Name'] }}"></option>
+      {% endfor %}
+    </datalist>
+    <input type="submit" name="submit-symbol">
+  </form>
+{% endblock %} 
