@@ -7,15 +7,16 @@ https://www.alphavantage.co/
 ```
 
 Build a command line interface or simple flask front-end site that support following features:
-    - User provides its own API key that is remembered for the session
-    - User can search specific company using and display results that match selection criteria in select list.
-        - [symbolsearch](https://www.alphavantage.co/documentation/#symbolsearch)
-    - User can select a company and have one of following options for it:
-        - display additional details in grid as:
-            - symbol, name, type, region, marketOpen, marketClose, timezone, currency, matchScore
-        - display historical prices on specific timeframes:
-            - intraday as 5m, 15m,.., daily or weekly or monthly (select two)
-                - [intraday](https://www.alphavantage.co/documentation/#intraday)
+
+- User provides its own API key that is remembered for the session
+- User can search specific company using and display results that match selection criteria in select list.
+    - [symbolsearch](https://www.alphavantage.co/documentation/#symbolsearch)
+- User can select a company and have one of following options for it:
+    - display additional details in grid as:
+        - symbol, name, type, region, marketOpen, marketClose, timezone, currency, matchScore
+    - display historical prices on specific timeframes:
+        - intraday as 5m, 15m,.., daily or weekly or monthly (select two)
+                - [intraday] (https://www.alphavantage.co/documentation/#intraday)
                 - [daily](https://www.alphavantage.co/documentation/#daily)
                 - [weekly](https://www.alphavantage.co/documentation/#weekly)
                 - [monthly](https://www.alphavantage.co/documentation/#monthly)
