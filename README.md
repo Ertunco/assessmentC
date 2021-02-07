@@ -67,5 +67,5 @@ Click Go to Login Page Button
 ### unittest
 Please run the command below to see the unit tests.
 ```
-python test_data_handler.py
+python test_flask_app.py
 ```
